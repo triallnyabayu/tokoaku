@@ -1,320 +1,105 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/forkamuaja/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  
+<head>
+<title>Pantun Romantis Buat Kamu</title>
+<link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
+<meta name="description" content="HTML Replit Coding">
+<!-- 
+  Made with love by Rayys!
+  
+     Blog: feeldream.id
+     Instagram: @rayyarrr
+     TikTok: @feelthisray
+     Email: rayyarr73@gmail.com
+     
+  Thanks to all <3
+-->
+</head>
+<body>
+  
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/angelbabypart2.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/pics/awan1.jpg" id="wallpaper"/>
+   </div>
+   
+   <div id='Content'>
 
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+     <div id="ftAwal">
+       <!-- Stiker Pembuka -->
+       <img src="https://feeldreams.github.io/pandaputih.gif" id="ftoAwal"/>
+     </div>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Responsive landing page headphones</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="assets/img/logo.png" alt="">
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#specs" class="nav__link">Specs</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#case" class="nav__link">Case</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#products" class="nav__link">Products</a>
-                        </li>
-                    </ul>
-
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-function-line"></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div>
-                        <img src="assets/img/home.png" alt="" class="home__img">
-                    </div>
-                    
-                    <div class="home__data">
-                        <div class="home__header">
-                            <h1 class="home__title">On ear</h1>
-                            <h2 class="home__subtitle">Beats 3</h2>
-                        </div>
-
-                        <div class="home__footer">
-                            <h3 class="home__title-description">Overview</h3>
-                            <p class="home__description">Enjoy award-winning Beats sound with wireless listening freedom and a sleek, 
-                                streamlined design with comfortable padded earphones, delivering first-rate playback.
-                            </p>
-                            <a href="#" class="button button--flex">
-                                <span class="button--flex">
-                                    <i class="ri-shopping-bag-line button__icon"></i></i> Add to Bag
-                                </span>
-                                <span class="home__price">$299</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!--=============== SPONSOR ===============-->
-            <section class="sponsor section">
-                <div class="sponsor__container container grid">
-                    <img src="assets/img/sponsor1.png" alt="" class="sponsor__img">
-                    <img src="assets/img/sponsor2.png" alt="" class="sponsor__img">
-                    <img src="assets/img/sponsor3.png" alt="" class="sponsor__img">
-                    <img src="assets/img/sponsor4.png" alt="" class="sponsor__img">
-                </div>
-            </section>
-
-            <!--=============== SPECS ===============-->
-            <section class="specs section grid" id="specs">
-                <h2 class="section__title section__title-gradient">Specs</h2>
-
-                <div class="specs__container container grid">
-                    <div class="specs__content grid">
-                        <div class="specs__data">
-                            <i class="ri-bluetooth-line specs__icon"></i>
-                            <h3 class="specs__title">Connection</h3>
-                            <span class="specs__subtitle">Bluetooth v5.2</span>
-                        </div>
-    
-                        <div class="specs__data">
-                            <i class="ri-battery-charge-line specs__icon"></i>
-                            <h3 class="specs__title">Battery</h3>
-                            <span class="specs__subtitle">Duration 40h</span>
-                        </div>
-    
-                        <div class="specs__data">
-                            <i class="ri-plug-line specs__icon"></i>
-                            <h3 class="specs__title">Load</h3>
-                            <span class="specs__subtitle">Fast charge 4.2-AAC</span>
-                        </div>
-    
-                        <div class="specs__data">
-                            <i class="ri-mic-line specs__icon"></i>
-                            <h3 class="specs__title">Microphone</h3>
-                            <span class="specs__subtitle">Supports Apple Siri <br> and Google</span>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <img src="assets/img/specs.png" alt="" class="specs__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== CASE ===============-->
-            <section class="case section grid" id="case">
-                <h2 class="section__title section__title-gradient">Case</h2>
-
-                <div class="case__container container grid">
-                    <div>
-                        <img src="assets/img/case.png" alt="" class="case__img">
-                    </div>
-
-                    <div class="case__data">
-                        <p class="case__description">With a comfortable and adaptable case so that you can 
-                            store it whenever you want, and keep your durability forever.
-                        </p>
-                        <a href="#" class="button button--flex">
-                            <i class="ri-information-line button__icon"></i> More info
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== DISCOUNT ===============-->
-            <section class="discount section">
-                <div class="discount__container container grid">
-                    <div class="discount__animate">
-                        <h2 class="discount__title">Immerse yourself in <br> your music</h2>
-                        <p class="discount__description">Get it now, up to 50% off.</p>
-                        <a href="#" class="button button--flex">
-                            <i class="ri-shopping-bag-line button__icon"></i> Shop Now
-                        </a>
-                    </div>
-
-                    <img src="assets/img/discount.png" alt="" class="discount__img">
-                </div>
-            </section>
-
-            <!--=============== PRODUCTS ===============-->
-            <section class="products section" id="products">
-                <h2 class="section__title section__title-gradient products__line">
-                    Choose <br> Your Style
-                </h2>
-
-                <div class="products__container container grid">
-                    <article class="products__card">
-                        <div class="products__content">
-                            <img src="assets/img/product1.png" alt="" class="products__img">
-    
-                            <h3 class="products__title">Black</h3>
-                            <span class="products__price">$249</span>
-    
-                            <button class="button button--flex products__button">
-                                <i class="ri-shopping-bag-line button__icon"></i>
-                            </button>
-                        </div>
-                    </article>
-                    <article class="products__card">
-                        <div class="products__content">
-                            <img src="assets/img/product2.png" alt="" class="products__img">
-    
-                            <h3 class="products__title">Red Black</h3>
-                            <span class="products__price">$249</span>
-    
-                            <button class="button button--flex products__button">
-                                <i class="ri-shopping-bag-line button__icon"></i>
-                            </button>
-                        </div>
-                    </article>
-                    <article class="products__card">
-                        <div class="products__content">
-                            <img src="assets/img/product3.png" alt="" class="products__img">
-    
-                            <h3 class="products__title">Night Black</h3>
-                            <span class="products__price">$249</span>
-    
-                            <button class="button button--flex products__button">
-                                <i class="ri-shopping-bag-line button__icon"></i>
-                            </button>
-                        </div>
-                    </article>
-                    <article class="products__card">
-                        <div class="products__content">
-                            <img src="assets/img/product4.png" alt="" class="products__img">
-    
-                            <h3 class="products__title">Blue</h3>
-                            <span class="products__price">$249</span>
-    
-                            <button class="button button--flex products__button">
-                                <i class="ri-shopping-bag-line button__icon"></i>
-                            </button>
-                        </div>
-                    </article>
-
-                    <article class="products__card">
-                        <div class="products__content">
-                            <img src="assets/img/product5.png" alt="" class="products__img">
-    
-                            <h3 class="products__title">Twilight gray</h3>
-                            <span class="products__price">$249</span>
-    
-                            <button class="button button--flex products__button">
-                                <i class="ri-shopping-bag-line button__icon"></i>
-                            </button>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <a href="#" class="footer__logo">
-                    <img src="assets/img/logo.png" alt="">
-                </a>
-    
-                <div class="footer__content">
-                    <h3 class="footer__title">Products</h3>
-    
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Headphones</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Earphones</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Earbuds</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Accesories</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="footer__content">
-                    <h3 class="footer__title">Support</h3>
-    
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Product help</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Register</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Updates</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Provides</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="footer__content">
-                    <form action="" class="footer__form">
-                        <input type="email" placeholder="Email" class="footer__input">
-                        <button class="button button--flex">
-                            <i class="ri-send-plane-line button__icon"></i> Subscribe
-                        </button>
-                    </form>
-    
-                    <div class="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                            <i class="ri-twitter-line"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <p class="footer__copy">
-                <a href="https://www.youtube.com/c/Bedimcode/" target="_blank" class="footer__copy-link">&#169; Bedimcode. All right reserved</a>
-            </p>
-        </footer>
-
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-s-line scrollup__icon"></i>
-        </a>
+     <div id="loveIn">
+       <!-- Tombol LOVE --><label class='lovein'>❤️</label>
+     </div>
+     <p id="ket">Sentuh LOVEnya!</p>
+     
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker"/>
+         <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker1"/>
+         <img src="https://feeldreams.github.io/pandakuning.gif" id="fotostiker2"/>
+         <img src="https://feeldreams.github.io/pusn.gif" id="fotostiker3"/>
+         <img src="https://feeldreams.github.io/gumush.gif" id="fotostikerA"/>
+     </div>
+     
+     <div><div id='pergeseran'>
+      
+        <p><b>
+          <span>hai kamuuu<br>aku ada pantun buat kamu</span>
+        </b></p>
         
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <p><b>
+          <span>ikan hiu bawa koper</span>
+        </b></p>
+        
+        <p><b>
+          <span>i love uu forever<3333</span>
+        </b></p>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <p><b>
+          <span>sate² apa yg bikin aku bahagia?</span>
+        </b></p>
+
+        <p><b>
+          <span>saterusnya sama kamu<br>😍😆🥰🤭🤣</span>
+        </b></p>
+        
+        <p><b>
+          <span id="iniakhir">terakhir nihh ><</span>
+        </b></p>
+       
+     </div></div>
+
+     <p id="ketgeser">Klik untuk Geser!</p>
+
+     <div><blockquote id='bq'>
+       <p id="kalimat"></p>
+       <p id="pesanAkhir" class="gaya4"></p>
+     </blockquote></div>
+
+   </div>
+   
+<script>
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
+  
+  teksAkhir = "di jalan ada lampu,<br>di kuburan ada hantu,<br>di kerajaan ada ratu,<br>tapi di hatiku...<br>cuma ada kamu, jiakhhh<3333";
+  teksAkhirB = "i love uuu ><";
+</script>
+<script src="https://malasid.github.io/pantunromantis/pantunromantis.js"></script>
+</body>
 </html>
